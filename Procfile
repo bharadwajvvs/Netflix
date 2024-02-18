@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: gunicorn main: create_app\(\) -w 3 -b 0.0.0.0:$PORT -k gevent --max-requests 250
